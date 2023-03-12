@@ -1,12 +1,12 @@
 public class Pet {
 
-  public String kind;
+  String kind;
 
-  public String nickname;
+  String nickname;
 
-  public String birthdate;
+  final String birthdate;
 
-  public int weight;
+  int weight;
 
   public Pet(String kind, String nickname, String birthdate, int weight);{
     this.kind = kind;
@@ -15,4 +15,31 @@ public class Pet {
     this.weight = weight;
   }
 
+  public String getKind() {
+    return kind;
+  }
+
+  public String getNickname() {
+    return nickname;
+  }
+
+  public String getBirthdate() {
+    return birthdate;
+  }
+
+  public int getWeight() {
+    return weight;
+  }
+
+  public void setKind(String kind) {
+    this.kind = kind;
+  }
+
+  public void setNickname(String nickname) {
+    this.nickname = nickname;
+  }
+
+  public void setWeight(int weight) {
+    this.weight = weight;
+  }
 }
